@@ -230,10 +230,11 @@ class _FillDetailsPageState extends State<FillDetailsPage> {
                 children: [
                   Icon(Icons.calendar_today, color: Colors.purple),
                   Gap(10),
-                  Text(
+                  Obx(()=>Text(
                     controller.customDate(),
                     style: TextStyle(fontSize: 16),
-                  ),
+                  ),),
+                  
                 ],
               ),
             ),
